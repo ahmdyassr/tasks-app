@@ -3,7 +3,7 @@
 //
 
 const { MongoClient, ObjectId } = require('mongodb')
-const connectionURL = 'mongodb+srv://ahmdyassr:0109105349@todoa-app.lrnbe.mongodb.net/?retryWrites=true&w=majority';
+
 const databaseName= 'tasks-app';
 
 MongoClient.connect(connectionURL, {useNewUrlParser: true},(e, client) => {

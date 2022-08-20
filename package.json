@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/ahmdyassr/tasks-app#readme",
   "dependencies": {
-    "mongodb": "^4.9.0"
+    "mongodb": "^4.9.0",
+    "mongoose": "^6.5.2",
+    "validator": "^13.7.0"
   }
 }

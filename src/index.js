@@ -8,12 +8,6 @@ const port = process.env.PORT || 3000;
 
 
 // Middleware
-
-app.use((req, res, next) => {
-  res.status(503).send('Server is in maintainance mode!')
-})
-
-
 app.use(express.json()) // Auto parse incoming JSON to objects
 app.use(userRouter)
 app.use(taskRouter)

@@ -39,6 +39,9 @@ const userSchema = new mongoose.Schema({
       }
     }
   },
+  avatar: {
+    type: Buffer
+  },
   age: {
     type: Number,
     validate(value) {
@@ -98,6 +101,7 @@ userSchema.methods.toJSON = function() {
 
   delete userObject.password
   delete userObject.tokens
+  delete userObject.avatar
 
   return userObject
 }

@@ -53,6 +53,8 @@ const userSchema = new mongoose.Schema({
       required: true
     }
   }]
+}, {
+   timestamps: true
 })
 
 // Reference the user to the tasks
